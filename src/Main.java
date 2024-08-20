@@ -1,15 +1,21 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
-        Author author = new Author("Стивенсон", "Роберт Льюис");
+        Author author1 = new Author("Стивенсон", "Роберт Льюис");
 
-        Book book = new Book("The Suicide Club", 1878, author);
+        Book book1 = new Book("The Suicide Club", 1878, author1);
 
-        System.out.println("Год публикации: " + book.getPublicationYear());
+        Author author2 = new Author("Толстой", "Лев");
 
-        book.setPublicationYear(1879);
+        Book book2 = new Book("Война и мир", 1863, author2);
 
-        System.out.println("Год публикации: " + book.getPublicationYear());
+        System.out.println("Год публикации: " + book1.getPublicationYear());
+
+        book1.setPublicationYear(1879);
+
+        System.out.println("Год публикации: " + book1.getPublicationYear());
 
 
     }
